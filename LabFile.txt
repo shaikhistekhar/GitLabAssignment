@@ -3,3 +3,4 @@ Practise file for DevOps lab. This was created on 09 Sep.
 First line of the file. Another line. Change
 
 Feature B says hello
+Change from Feature B
