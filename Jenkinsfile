@@ -3,17 +3,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building...'
+                echo 'Compiling Java program...'
+                sh 'javac HelloJava.java'
             }
         }
-        stage('Test') {
+        stage('Run') {
             steps {
-                echo 'Testing...'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying...'
+                echo 'Running Java program...'
+                sh 'java HelloJava'
             }
         }
     }
